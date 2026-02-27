@@ -1,0 +1,32 @@
+Recursion:
+a function callingg itself
+there are two types of recursion
+1.base case: the base case is a condoition that the program will stop.
+            *if there is no base case the program will continously runs at infinite recursion.
+2.recursive case: function calls itself with a smaller input.
+how function calls work in languages:
+*while the functoion is not finished executing it will remain in stack
+*when a function finishes executing it is removed from the stack and  the flow of program is restored to where the function was called.
+why recursion:
+*it helps us in solving bigger/complex problems in a simple way.
+*you can convert recursion solution into iteration & vice versa.
+*1.identify the base case
+ 2.identifyy what changes in each call.
+ 3.use a loop instead of function calls.
+ 4.use a stack manually to simulate recursion.
+recursion uses call stack memory.
+tooo many calls it takes over space,in iteration the space is low .
+*space complexity is not constant because of recursive calls.
+*it helps in breaking dowwn bigger problems into smaller problems.
+example : find the nth fibonacci number?
+solution : public class Fibonacci {
+              public static int fib(int n){
+                 if(n <= 1)
+                   return n;
+                  return fib(n-1) + fib(n-2);
+              }
+             public static void main(string[]args){
+               System.out.println(fib(6));
+}
+}
+
